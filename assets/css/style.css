@@ -1,0 +1,650 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 0;
+    font-family: 'Press Start 2P';
+    color: #eab931;
+}
+
+
+h1{
+    position: relative;
+    color: #F3D46A;
+    text-shadow: -0.2vw 0 #B11B00, 0 0.2vw #B11B00, 0.2vw 0 #B11B00, 0 -0.2vw #B11B00;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin: 1vw;    
+}
+
+#wrapper {
+    width: 95vw;
+    margin: 2.5vh auto;
+    position: relative;    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    background-color: white;
+}
+
+#filler {
+    position: absolute;
+    visibility: visible;
+    width: 95vw;
+    height: auto;
+    z-index: 0;
+}
+
+.layer1, .background {position: absolute; z-index: 1;}
+.layer2 {position: absolute; z-index: 2;}
+.layer3 {position: absolute; z-index: 3;}
+.layer4 {position: absolute; z-index: 4;}
+
+.background {    
+    width: 95vw;
+    height: 47.5vw;
+}
+
+ #logo {
+    top: 0.5vw;
+    left: 45vw;
+    width: 43.65vw;
+    height: 24.3vw;
+}
+
+#okay, #ko {
+    position: absolute;
+    top: 10vw;
+    left: 36vw;    
+    height: 11.2vw;
+    width: 21.8vw;
+}
+
+#scott-container, #ramona-container, #stills-container {
+    background-color: white;
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+
+#scott-idle, #stills-idle{
+    width: 10vw;
+    height: auto;
+}
+
+#stills-running, #kim-running{        
+    height: 11.5vw;
+    width: auto;
+}
+
+#scott-victory, #scott-running{
+    height: 12.5vw;
+    width: auto;
+}
+
+
+
+#scott-container {
+    top: 23vw;
+    left: 13.3vw;
+}
+
+#scott-running{
+    top: -0.9vw;
+    left: -1.5vw;
+}
+
+#scott-victory {
+    left: 0.9vw;
+    top: -1vw;
+}
+
+#scott-attack1 {
+    height: 13.667vw;
+    width: 10vw;
+    left: 0.2vw;
+    top: -2.2vw;
+}
+
+#scott-attack2 {
+    height: 10.333vw;
+    width: 10vw;
+    top: 1vw;
+    left: 1vw;
+}
+
+#scott-block {    
+    height: 11vw;
+    width: 7vw;
+    top: 1.15vw;
+    left: .75vw;
+}
+
+#scott-damaged {    
+    height: 16.5vw;
+    width: 12vw;
+    top: -4vw;
+    left: -4.5vw;
+}
+
+#scott-up {
+    height: 13vw;
+    width: 13vw;
+    top: -1vw;
+    left: -5.5vw;
+}
+
+#ramona-container{
+    top: 24vw;
+    left: 35vw;
+}
+
+#ramona-idle{
+    width: auto;
+    height: 11vw;
+    top: -.7vw;
+    left: -.35vw;
+}
+
+#ramona-running{
+    height: 13vw;
+    width: auto;
+    top: -2.6vw;
+    left: -3.3vw;
+}
+
+#ramona-victory {
+    left: -1.8vw;
+    top: -3vw;
+    height: 13.5vw;
+    width: auto;
+}
+
+#ramona-attack1 {
+    top: -4.5vw;
+    left: -2.1vw;
+    height: 18vw;
+    width: 16vw;
+}
+
+#ramona-attack2 {
+    top: -1.35vw;
+    left: -1.67vw;
+    height: 13vw;
+    width: 18vw;
+}
+
+#ramona-block {
+    top: -1.35vw;
+    left: -2.5vw;
+    height: 11.5vw;
+    width: 9vw;
+}
+
+#ramona-damaged {
+    top: -3.7vw;
+    left: -11.7vw;
+    height: 15.5vw;
+    width: 18vw;
+}
+
+#ramona-up {
+    top: -3.7vw;
+    left: -11.7vw;
+    height: 15.5vw;
+    width: 18vw;
+}
+
+#stills-container{
+    top: 23.5vw;
+    left: 51.1vw;
+}
+
+#stills-running{
+    top: -0.5vw;
+}
+
+#stills-victory {    
+    height: 11vw;
+    width: 8vw;
+}
+
+#stills-attack1{
+    position: absolute;
+    top: -1.5vw;
+    left: -.6vw;
+    height: 12.5vw;
+    width: auto;
+}
+
+#stills-attack2 {
+    top: -7.35vw;
+    left: -8.5vw;
+    height: 19vw;
+    width: 30vw;
+}
+
+#stills-block {
+    top: -.05vw;
+    left: -.1vw;
+    height: 11vw;
+    width: 7.75vw;
+}
+
+#stills-damaged {
+    top: -5vw;
+    left: -10vw;
+    height: 16.5vw;
+    width: 16vw;
+}
+
+#stills-up {
+    top: -4.2vw;
+    left: -8vw;
+    height: 16.5vw;
+    width: 16vw;
+}
+
+#kim-container{
+    top: 24.3vw;
+    left: 71.6vw;
+}
+
+#kim-idle {    
+    height: 10.33vw;
+    width: 5vw;
+}
+
+#kim-running{
+    top: -0.8vw;
+    left: -0.5vw;
+}
+
+#kim-victory {
+    height: 12vw;
+    width: auto;
+    left: -1vw;
+    top: -1.4vw;
+}
+
+#kim-attack1 {    
+    height: 11.5vw;
+    width: 13vw;
+    left: -1vw;
+}
+
+#kim-attack2 {    
+    height: 14vw;
+    width: 21vw;
+    left: -4vw;
+    top: -3.5vw;
+}
+
+#kim-block {    
+    height: 12vw;
+    width: 7vw;
+    left: -0.3vw;
+    top: -0.6vw;
+}
+
+#kim-damaged {    
+    height: 16.5vw;
+    width: 21.5vw;
+    left: -14.8vw;
+    top: -4.6vw;  
+}
+
+#kim-up {    
+    height: 16.5vw;
+    width: 20vw;
+    left: -14.3vw;
+    top: -5.6vw;
+}
+
+#scott-stats, #ramona-stats, #stills-stats, #kim-stats {
+    position: absolute;
+    top: 12vw;
+    background: black;
+    border-top: 0.5vw solid blue;
+    border-bottom: .5vw solid blue;
+    height: 25vw;
+    width: 30vw;
+}
+
+#scott-stats:before, #ramona-stats:before, #stills-stats:before, #kim-stats:before, #scott-stats:after, #ramona-stats:after, #stills-stats:after, #kim-stats:after  {
+content: '';
+top: 0;
+width: .5vw;
+height: 25vw;
+position: absolute;
+background: blue;
+}
+#scott-stats:before, #ramona-stats:before, #stills-stats:before, #kim-stats:before {left: -0.5vw}
+#scott-stats:after, #ramona-stats:after, #stills-stats:after, #kim-stats:after  {right: -0.5vw}
+
+#scott-stats, #kim-stats {
+    left: 32vw;
+}
+
+#ramona-stats {
+    left: 48vw;
+}
+
+#stills-stats{
+    right: 48vw;
+}
+
+#matthew-container{
+    top: 24vw;
+    left: 21vw;
+}
+
+#matthew-idle {    
+    height: 10.45vw;
+    width: 8.8vw;
+}
+
+#matthew-running {
+    height: 13vw;
+    width: 10vw;
+    left: -1vw;
+    top: -1.5vw;
+}
+
+#matthew-attack1{
+    width: 16.5vw;
+    height: 12vw;
+    top: -1vw;
+    left: -5vw;
+}
+
+#matthew-attack2{
+    width: 13vw;
+    height: 38vw;
+    top: -25.75vw;   
+    left: -1.5vw;
+}
+
+#matthew-damaged {
+    height: 18vw;
+    width: 13vw;
+    top: -7.25vw;
+    left: 2vw;    
+}
+
+#matthew-up{
+    width: 15vw;
+    height: 18vw;
+    top: -6.5vw;
+    left: .5vw;
+}
+
+#matthew-death{
+    position: absolute;
+    width: 19vw;
+    height: 23vw;
+    top: 5vw;
+    left: 12vw;
+    background-image: url(../images/matthew/matthew-death.png);
+    background-size: 247vw 23vw;
+}
+
+#roxxy-container{
+    top: 24.5vw;
+    left: 41vw;
+}
+
+#roxxy-idle {
+    height: 10vw;
+    width: 11vw;
+}
+
+#roxxy-running {
+    height: 16.5vw;
+    width: 10vw;
+    left: 2.05vw;
+    top: -5.1vw;
+}
+
+#roxxy-attack1{
+    width: 16.5vw;
+    height: 21vw;
+    top: -11vw;
+    left: 0vw;
+}
+
+#roxxy-attack2{
+    width: auto;
+    height: 16.5vw;
+    top: -6vw;   
+    left: -12vw;
+}
+
+#roxxy-damaged {
+    height: 16.5vw;
+    width: auto;
+    top: -6vw;
+    left: -3vw;    
+}
+
+#roxxy-up{
+    width: 18vw;
+    height: 16.5vw;
+    top: -6.5vw;
+    left: -2.5vw;
+}
+
+#roxxy-death{
+    position: absolute;
+    width: 30vw;
+    height: 22.5vw;
+    top: 20vw;
+    left: 39vw;
+}
+
+#envy-container{
+    position: absolute;
+    top: 24.5vw;
+    left: 65vw;
+}
+
+#envy-idle {
+    top: -1vw;
+    height: 11.5vw;
+    width: 7.5vw;
+}
+
+#envy-running {
+    height: 12vw;
+    width: auto;
+    left: -2.05vw;
+    top: -1.7vw;
+}
+
+#envy-attack1{
+    position: absolute;
+    width: 12vw;
+    height: 12.5vw;
+    top: -2vw;
+    left: -2vw;
+}
+
+#envy-summon{
+    top: -4.25vw;
+    left: -3vw;
+    height: 15vw;
+    width: auto;
+}
+#lynette {
+    top: -4.25vw;
+    left: -35vw;
+    height: 16vw;
+    width: auto;
+}
+
+#envy-damaged {
+    height: 15.5vw;
+    width: 17.5vw;
+    top: -5.1vw;
+    left: .5vw;
+}
+
+#envy-up{
+    width: 17.5vw;
+    height: 15.5vw;
+    top: -5vw;
+    left: .5vw;
+}
+
+#envy-death{
+    position: absolute;
+    width: 16.5vw;
+    height: 18.5vw;
+    top: 16.5vw;
+    left: 54vw;
+}
+
+#fight-menu {    
+    position: absolute;
+    top: 3vw;
+    left: 26vw;
+    background: black;    
+    border-top: 0.5vw solid blue;
+    border-bottom: .5vw solid blue;
+    height: 15vw;
+    width: 40vw;
+}
+#fight-menu:before, #fight-menu:after{
+    content: '';
+    top: 0;
+    width: .5vw;
+    height: 15vw;
+    position: absolute;
+    background: blue;
+}
+#fight-menu:before {left: -0.5vw}
+#fight-menu:after  {right: -0.5vw}
+#text-message {
+    text-transform: uppercase;
+}
+#text-menu {    
+    position: absolute;
+    top: 3vw;
+    left: 26vw;
+    background: black;    
+    border-top: 0.5vw solid blue;
+    border-bottom: .5vw solid blue;
+    height: 15vw;
+    width: 40vw; 
+}
+#text-menu:before, #text-menu:after{
+    content: '';
+    top: 0;
+    width: .5vw;
+    height: 15vw;
+    position: absolute;
+    background: blue;
+}
+#text-menu:before {left: -0.5vw}
+#text-menu:after  {right: -0.5vw}
+
+button {
+    position: absolute;
+    height: 7.5vw;
+    width: 20vw;
+    text-align: center;    
+    color: #F3D46A;
+    text-shadow: -0.2vw 0 #B11B00, 0 0.2vw #B11B00, 0.2vw 0 #B11B00, 0 -0.2vw #B11B00;
+    font-size: 2vw;
+    line-height: 2vw;
+    background-color: black;
+    border: 0px;
+    font-family: 'Press Start 2P'
+}
+#attack2-button, #flee-button{
+    left: 20vw;
+}
+#block-button, #flee-button{
+    top: 7.5vw;
+}
+
+#player-stats, #enemy-stats {
+    font-size: 0.8vw;
+    color: black;    
+    padding: .5vw;
+    top: 22vw;    
+    width: 12.5vw;
+    height: 4vw;
+    background-color: white;    
+    border-top: 0.5vw solid black;
+    border-bottom: .5vw solid black;
+    }
+#player-stats:before, #enemy-stats:before, #player-stats:after, #enemy-stats:after{    
+    content: '';
+    top: 0;
+    width: .5vw;
+    height: 5vw;
+    position: absolute;
+    background: black;
+}
+#player-stats:before, #enemy-stats:before{left: -0.5vw}
+#player-stats:after, #enemy-stats:after{right: -0.5vw}
+
+#player-stats {left: 11vw;}
+#enemy-stats {left: 71vw;}
+
+.tags{
+    line-height: 1.1vw;
+}
+#player-hp-num, #player-sp-num, #enemy-hp-num, #enemy-sp-num{
+    margin-left: 7vw;
+}
+#player-hp-bar, #enemy-hp-bar {
+    background-color: green;
+    width: 10vw;
+    top: 0vw;
+    left: 0;
+    height: .5vw;
+    position: absolute;
+}
+#player-sp-bar, #enemy-sp-bar {
+    background-color: yellow;
+    width: 0vw;
+    top: 0.0vw;
+    left: 0;
+    height: .45vw;
+    position: absolute;
+}
+#player-hp, #enemy-hp, #player-sp, #enemy-sp{
+    position: absolute;
+    width: 10vw;
+    height: .5vw;    
+    left: 3vw;
+    border-top: 0.2vw solid black;
+    border-bottom: .2vw solid black;
+}
+
+#player-hp, #enemy-hp{
+    top: 0.65vw;
+}
+#player-sp, #enemy-sp{
+    top: 2.7vw;
+}
+
+#player-hp:before, #enemy-hp:before, #player-sp:before, #enemy-sp:before, #player-hp:after, #enemy-hp:after, #player-sp:after, #enemy-sp:after{
+    content: '';
+    top: 0vw;
+    width: .2vw;
+    height: .5vw;
+    position: absolute;
+    background: black;
+}
+#player-hp:before, #enemy-hp:before, #player-sp:before, #enemy-sp:before{left: -.2vw}
+#player-hp:after, #enemy-hp:after, #player-sp:after, #enemy-sp:after{right: -.2vw}
+#envy-difficulty, #roxxy-difficulty, #matthew-difficulty{
+    top: 12vw;
+    left: -5vw;
+}
